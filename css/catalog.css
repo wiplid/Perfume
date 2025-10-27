@@ -1,0 +1,1033 @@
+*,
+::after,
+::before {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.h1 {
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.shop_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop_card {
+    width: 350px;
+    height: 450px;
+    background-color: #D9D9D9;
+    margin-top: 76px;
+}
+
+
+.shop_card img {
+    padding: 20px 20px 0px 20px;
+    
+}
+
+.name_block {
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.discount {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.smell {
+    padding: 0px 0px 26px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+.header {
+    padding: 25px 0;
+    border-bottom: 5px solid color(#38040E);
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    margin-bottom: 10px;
+    width: 1600px;
+}
+
+.logo img {
+    width: 70px;
+    vertical-align: bottom;
+    padding-top: 10px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu ul {
+    list-style: none;
+    font-size: 24px;
+}
+
+.menu li {
+    margin-bottom: 30px;
+    
+}
+
+.item-LogIn a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.menu-LogIN ul {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+}
+
+.logo {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 60px;
+}
+
+header {
+    
+    border-bottom: 2px solid #38040E;
+}
+
+
+.burger {
+    position: relative;
+    z-index: 1000;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    background-color: #38040E;
+    transition: all 0.3s ease;
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: #38040E;
+    transition: all 0.3s ease;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 9px;
+    transform: rotate(-45deg);
+}
+
+.burger.active::after {
+    bottom: 9px;
+    transform: rotate(45deg);
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(56, 4, 14, 0.98);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.menu.open ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu.open .menu-item a {
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu.open .menu-item a:hover {
+    color: #000000;
+}
+
+footer {
+    margin-top: 60px;
+    border-top: 2px solid #38040E; 
+    width: 1600px;
+}
+
+.ftr-item a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    
+}
+
+.ftr ul {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1500px;
+        width: 100%;
+    }
+
+    .header {
+        width: 1500px;
+    }
+
+    footer {
+        width: 1500px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .container {
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 36px;
+    }
+
+    .shop_card {
+        margin-top: 50px;
+    }
+
+    .shop_card {
+        width: 300px;
+        height: 380px;
+    }
+
+
+    .shop_card img {
+        padding: 20px 20px 0px 20px;
+        width: 300px;
+    }
+
+    .name_block {
+        padding: 20px 0px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .header {
+        width: 1400px;
+    }
+
+    footer {
+        width: 1400px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    .header {
+        width: 1300px;
+    }
+
+    footer {
+        width: 1300px;
+    }
+
+    .ftr ul {
+        width: 1300px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    .shop_card {
+        margin-top: 45px;
+    }
+
+    .shop_card {
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .shop_card img {
+        padding: 20px 20px 0px 20px;
+        width: 250px;
+    }
+
+    .name {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .discount {
+        font-size: 13px;
+        font-weight: 400;
+        margin-right: 15px;
+    }
+
+    .smell {
+        padding: 0px 0px 20px 20px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .header {
+        width: 1200px;
+    }
+
+    footer {
+        width: 1200px;
+    }
+
+    .ftr ul {
+        width: 1200px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .header {
+        width: 1100px;
+    }
+
+    footer {
+        width: 1100px;
+    }
+
+    .ftr ul {
+        font-size: 16px;
+        margin-right: 50px;
+        width: 1100px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 26px;
+    }
+
+    .shop_card {
+        margin-top: 45px;
+    }
+
+    .shop_card {
+        width: 300px;
+        height: 360px;
+    }
+
+
+    .shop_card img {
+        padding: 20px 20px 0px 20px;
+        width: 300px;
+    }
+
+    .name {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .discount {
+        font-size: 13px;
+        font-weight: 400;
+        margin-right: 15px;
+    }
+
+    .smell {
+        padding: 0 0 20px 20px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .name_block {
+        padding: 10px 0px 15px 20px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 1000px;
+    }
+
+    footer {
+        width: 1000px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .ftr ul {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .shop_card {
+        width: 250px;
+        height: 320px;
+    }
+
+    .shop_card img {
+        padding: 20px 20px 0 20px;
+        width: 250px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 900px
+    }
+
+    footer {
+        width: 900px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .ftr ul {
+        width: 900px;
+    }
+
+    .h1 {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .shop_card {
+        width: 250px;
+        height: 320px;
+    }
+
+    .shop_card img {
+        padding: 20px 20px 0 20px;
+        width: 250px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 800px;
+    }
+
+    footer {
+        width: 800px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 20px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+        font-size: 20px;
+    }
+
+    .ftr ul {
+        width: 800px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .shop_card {
+        width: 280px;
+        height: 360px;
+    }
+
+    .shop_card img {
+        padding: 20px 20px 0 20px;
+        width: 280px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 700px;
+    }
+
+    footer {
+        width: 700px;
+    }
+    
+    .menu-LogIN ul {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 26px;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 12px;
+        font-size: 16px;
+    }
+
+    .ftr ul {
+        width: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .shop_card {
+        width: 280px;
+        height: 360px;
+    }
+
+    .shop_card img {
+        padding: 20px 20px 0 20px;
+        width: 280px;
+    }
+    
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 600px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 16px;
+    }
+
+    footer {
+        width: 600px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    .ftr-item a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .ftr ul {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 22px;
+    }
+
+    .shop_card {
+        width: 230px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .shop_card img {
+        padding: 20px 20px 0 20px;
+        width: 230px;
+    }
+
+    .name {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .discount {
+        font-size: 11px;
+        font-weight: 400;
+        margin-right: 15px;
+    }
+
+    .smell {
+        padding: 0 0 20px 20px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .name_block {
+        padding: 10px 0 15px 20px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 500px;
+    }
+
+    footer {
+        width: 500px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+
+    .logo img {
+        margin-left: 20px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 500px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 500px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 20px;
+    }
+
+    .shop_card {
+        width: 180px;
+        height: 230px;
+        margin-top: 30px;
+    }
+
+    .shop_card img {
+        padding: 10px 10px 0px 10px;
+        width: 180px;
+    }
+
+    .name {
+        font-size: 11px;
+        font-weight: 600;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .discount {
+        font-size: 9px;
+        font-weight: 400;
+        margin-right: 15px;
+    }
+
+    .smell {
+        padding: 0px 0px 15px 10px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .name_block {
+        padding: 10px 0px 10px 10px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 400px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 60px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 400px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 400px;
+    }
+    
+    footer {
+        padding: 20px 0;
+        width: 400px;
+    }
+    
+    .logo img {
+        width: 30px;
+    }
+
+    .h1 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 18px;
+    }
+
+    .shop_card {
+        width: 140px;
+        height: 180px;
+        margin-top: 30px;
+    }
+
+    .shop_card img {
+        padding: 10px 10px 0px 10px;
+        width: 140px;
+    }
+
+    .name {
+        font-size: 9px;
+        font-weight: 600;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .discount {
+        font-size: 7px;
+        font-weight: 400;
+        margin-right: 15px;
+    }
+
+    .smell {
+        padding: 0px 0px 15px 10px;
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .name_block {
+        padding: 5px 0px 10px 10px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 300px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 300px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 300px;
+    }
+    
+    footer {
+        padding: 20px 0;
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 18px;
+    }
+
+    .shop_card {
+        width: 180px;
+        height: 230px;
+        margin-top: 30px;
+    }
+
+    .shop_card img {
+        padding: 10px 10px 0px 10px;
+        width: 180px;
+    }
+
+    .name {
+        font-size: 11px;
+        font-weight: 600;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .discount {
+        font-size: 9px;
+        font-weight: 400;
+        margin-right: 15px;
+    }
+
+    .smell {
+        padding: 0px 0px 15px 10px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .name_block {
+        padding: 10px 0px 10px 10px;
+    }
+
+    .header {
+        padding: 0 20px;
+        position: relative;
+        width: 200px;
+    }
+
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 20px;
+    }
+
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 200px;
+    }
+    
+    .ftr-item a {
+        font-size: 13px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 200px;
+    }
+    
+    footer {
+        padding: 10px 0;
+        margin-top: 40px;
+        width: 200px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 13px;
+    }
+}

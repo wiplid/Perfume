@@ -1,0 +1,1443 @@
+*,
+::after,
+::before {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.marck-script-regular {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.glav_text {
+    color: #F0E2E2;
+    background-color: #38040E;
+    width: 640px;
+    font-size: 36px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+}
+
+.glav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.best {
+    margin-top: 200px;
+}
+
+.best-text {
+    font-size: 64px;
+    margin: 0;
+    font-weight: normal;
+    margin-left: 0;
+}
+
+.glav_img {
+    width: 740px;
+}
+
+.img__best {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image_best {
+    width: 350px;
+}
+
+.stocks {
+    margin-top: 200px;
+    height: 600px;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.stocks-h2 {
+    font-size: 80px;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.stocks-text {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 270px;
+}
+
+.header {
+    display: flex;
+    align-items: center;    
+    margin-bottom: 10px;
+    width: 100%; 
+}
+
+header {
+    border-bottom: 2px solid #38040E;
+}
+
+.logo img {
+    width: 70px;
+    padding-top: 5px;
+    vertical-align: bottom;
+}
+
+.logo {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+.menu-item a {
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style: none;
+    font-size: 24px;
+}
+
+.item-LogIn a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-LogIN ul {
+    list-style: none;
+    font-size: 24px;
+    display: flex;
+    margin: 0;
+}
+
+.burger.active {
+    position: fixed;
+    top: 25px;
+}
+
+.burger {
+    position: relative;
+    z-index: 1000;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    background-color: #38040E;
+    transition: all 0.3s ease;
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: #38040E;
+    transition: all 0.3s ease;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 9px;
+    transform: rotate(-45deg);
+        background-color: white;
+}
+
+.burger.active::after {
+    bottom: 9px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(56, 4, 14, 0.98);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.menu.open ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu.open .menu-item a {
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu.open .menu-item a:hover {
+    color: #000000;
+}
+
+footer {
+    margin-top: 70px;
+    border-top: 2px solid #38040E; 
+    width: 100%;
+}
+
+.ftr-item a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.ftr ul {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1600px;
+}
+
+
+@media (max-width: 1600px) {
+    body {
+        width: 1500px;
+    }
+
+    .container {
+        max-width: 1500px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 600px;
+    }
+
+    .best-text {
+        font-size: 40px;
+    }
+
+    .glav_text {
+        width: 500px;
+        font-size: 25px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+
+    .best-text {
+        margin-left: 80px;
+    }
+
+    .image_best {
+        width: 250px;
+    }
+
+    .ftr ul {
+        width: 1500px;
+    }
+
+}
+
+@media (max-width: 1500px) {
+    body {
+        width: 1400px;
+    }
+
+    .container {
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 500px;
+    }
+
+    .best-text {
+        font-size: 40px;
+    }
+
+    .glav_text {
+        width: 400px;
+        font-size: 25px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+
+    .best-text {
+        margin-left: 80px;
+    }
+
+    .image_best {
+        width: 250px;
+    }
+
+    .ftr ul {
+        width: 1400px;
+    }
+}
+
+@media (max-width: 1400px) {
+    
+    body {
+        width: 1300px;
+    }
+
+    .container {
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 600px;
+    }
+
+    .best-text {
+        font-size: 40px;
+    }
+
+    .glav_text {
+        width: 500px;
+        font-size: 25px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+
+    .image_best {
+        width: 250px;
+    }
+
+    .ftr ul {
+        width: 1300px;
+    }
+    
+}
+
+@media (max-width: 1300px) {
+    body {
+        width: 1200px;
+    }
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 500px;
+    }
+
+    .best-text {
+        font-size: 40px;
+    }
+
+    .best {
+        margin-top: 100px;
+    }
+
+    .glav_text {
+        width: 400px;
+        font-size: 23px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+
+    .image_best {
+        width: 250px;
+    }
+
+    .stocks {
+        height: 450px;
+        margin-top: 100px;
+    }
+
+    .stocks-h2 {
+        padding-top: 80px;
+    }
+
+    .stocks-text {
+        padding-top: 200px;
+    }
+    .ftr ul {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    body {
+        width: 1100px;
+    }
+
+    .container {
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .glav {
+        margin-top: 70px;
+    }
+
+    .glav_img {
+        width: 450px;
+    }
+
+    .glav_text {
+        width: 350px;
+        height: 400px;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+
+    .best {
+        margin-top: 100px;
+    }
+
+    .image_best {
+        width: 220px;
+    }
+
+    .best-text {
+        font-size: 40px;
+    }
+
+    .stocks {
+        height: 450px;
+        margin-top: 100px;
+    }
+
+    .stocks-h2 {
+        padding-top: 80px;
+    }
+
+    .stocks-text {
+        padding-top: 200px;
+    }
+
+    .stocks-h2 {
+        font-size: 60px;
+    }
+
+    .stocks-text {
+        font-size: 20px;
+    }
+
+    .ftr ul {
+        font-size: 16px;
+        margin-right: 50px;
+    }
+
+    .ftr ul {
+        width: 1100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    
+    body {
+        width: 1000px;
+    }
+
+    .container {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    .glav {
+        margin-top: 70px;
+    }
+
+    .glav_img {
+        width: 450px;
+    }
+
+    .glav_text {
+        width: 350px;
+        height: 400px;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+
+    .best {
+        margin-top: 100px;
+    }
+
+    .image_best {
+        width: 220px;
+    }
+
+    .stocks {
+        height: 450px;
+        margin-top: 100px;
+    }
+
+    .stocks-h2 {
+        padding-top: 80px;
+    }
+
+    .stocks-text {
+        padding-top: 200px;
+    }
+
+    .stocks-h2 {
+        font-size: 60px;
+    }
+
+    .stocks-text {
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 900px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .ftr ul {
+        width: 1000px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    body {
+        width: 900px;
+    }
+
+    .container {
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 400px;
+    }
+
+    .glav_text {
+        width: 300px;
+        height: 350px;
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+
+    .stocks {
+        height: 400px;
+        margin-top: 100px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 800px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .ftr ul {
+        width: 900px;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        width: 800px;
+    }
+
+    .container {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 350px;
+    }
+
+    .glav_text {
+        width: 250px;
+        height: 330px;
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 20px;
+    }
+
+    .stocks {
+        height: 300px;
+        margin-top: 100px;
+    }
+
+    .image_best {
+        width: 200px;
+    }
+
+    .stocks-h2 {
+        font-size: 60px;
+        padding-top: 40px;
+    }
+
+    .stocks-text {
+        font-size: 20px;
+        padding-top: 120px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 700px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 20px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr ul {
+        width: 800px;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 700px;
+    }
+
+    .container {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 300px;
+    }
+
+    .glav_text {
+        width: 245px;
+        height: 290px;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-top: 15px;
+    }
+
+    .best {
+        margin-top: 80px;
+    }
+
+    .image_best {
+        width: 150px;
+    }
+
+    .best-text {
+        font-size: 40px;
+    }
+
+    .stocks {
+        height: 300px;
+        margin-top: 80px;
+    }
+
+    .stocks-h2 {
+        padding-top: 60px;
+    }
+
+    .stocks-text {
+        padding-top: 150px;
+    }
+
+    .stocks-h2 {
+        font-size: 40px;
+    }
+
+    .stocks-text {
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 600px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 26px;
+    }
+
+    .ftr-item a {
+        font-size: 14px;
+    }
+
+    .ftr ul {
+        width: 700px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    body {
+        width: 600px;
+    }
+
+    .container {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .glav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .glav_img {
+        width: 400px;
+    }
+
+    .glav_text {
+        width: 345px;
+        height: 300px;
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-top: 25px;
+    }
+
+    .best {
+        margin-top: 40px;
+        
+    }
+
+    .img__best {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .image_best {
+        width: 250px;
+    }
+
+    .best-text {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .stocks {
+        height: 300px;
+        margin-top: 80px;
+    }
+
+    .stocks-h2 {
+        padding-top: 60px;
+    }
+
+    .stocks-text {
+        padding-top: 150px;
+    }
+
+    .stocks-h2 {
+        font-size: 40px;
+    }
+
+    .stocks-text {
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 400px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 16px;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    .ftr-item a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .ftr ul {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 500px;
+    }
+
+    .container {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .header {
+        width: 400px;
+    }
+
+    .best-text {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .stocks {
+        height: 250px;
+        margin-top: 40px;
+    }
+
+    .stocks-h2 {
+        padding-top: 30px;
+    }
+
+    .stocks-text {
+        padding-top: 130px;
+    }
+
+    .stocks-h2 {
+        font-size: 40px;
+    }
+
+    .stocks-text {
+        font-size: 14px;
+    }    
+    
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    .logo img {
+        padding-left: 20px;
+    }
+    
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 500px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 500px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 300px;
+    }
+
+    .img__best {
+        margin-top: 20px;
+    }
+
+    .glav_text {
+        width: 275px;
+        height: 200px;
+        font-size: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 25px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .best-text {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 300px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 60px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 400px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 400px;
+    }
+    
+    footer {
+        padding: 20px 0;
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    body {
+        width: 300px;
+    }
+
+    .container {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 250px;
+    }
+
+    .glav_text {
+        width: 220px;
+        height: 200px;
+        font-size: 11px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+
+    .best-text {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .stocks {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .stocks-h2 {
+        padding-top: 30px;
+    }
+
+    .stocks-text {
+        padding-top: 90px;
+    }
+
+    .stocks-h2 {
+        font-size: 30px;
+    }
+
+    .stocks-text {
+        font-size: 12px;
+    }  
+
+    .image_best {
+        width: 220px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 200px;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 300px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 300px;
+    }
+    
+    footer {
+        padding: 20px 0;
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 200px;
+    }
+
+    .container {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .glav_img {
+        width: 150px;
+    }
+
+    .glav_text {
+        width: 140px;
+        height: 100px;
+        font-size: 6.5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+
+    .best-text {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .stocks {
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    .stocks-h2 {
+        padding-top: 20px;
+    }
+
+    .stocks-text {
+        padding-top: 80px;
+    }
+
+    .stocks-h2 {
+        font-size: 20px;
+    }
+
+    .stocks-text {
+        font-size: 9px;
+    }  
+
+    .image_best {
+        width: 150px;
+    }
+
+    .header {
+        padding: 0 20px;
+        position: relative;
+        width: 120px;
+    }
+    
+    .logo img {
+        width: 20px;
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 20px;
+    }
+
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 200px;
+    }
+    
+    .ftr-item a {
+        font-size: 13px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 200px;
+    }
+    
+    footer {
+        padding: 10px 0;
+        margin-top: 40px;
+        width: 200px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 13px;
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .main-b {
+        width: 95%;
+        
+    }
+    .card-brand {
+        width: 200px;
+        height: 300px;
+    }
+    .img-brand img {
+        width: 180px;
+    }
+    .text-brand {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 26px;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    .ftr-item a {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width: 300px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+
+
+

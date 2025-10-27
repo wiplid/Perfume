@@ -1,0 +1,1108 @@
+*,
+::after,
+::before {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 70px;
+}
+
+.shop_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop_card {
+    width: 350px;
+    height: 432px;
+    background-color: #D9D9D9;
+    margin: 70px 0px 0px 0px;
+}
+
+
+.shop_card img {
+    padding: 20px 20px 0px 20px;
+    
+}
+
+.name_block {
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.discount {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.smell {
+    padding: 0px 0px 26px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+.header {
+    display: flex;
+    align-items: center;    
+    margin-bottom: 10px;
+    width: 100%; 
+}
+
+header {
+    border-bottom: 2px solid #38040E;
+}
+
+.logo img {
+    width: 70px;
+    padding-top: 5px;
+    vertical-align: bottom;
+}
+
+.logo {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+.menu-item a {
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style: none;
+    font-size: 24px;
+}
+
+.item-LogIn a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-LogIN ul {
+    list-style: none;
+    font-size: 24px;
+    display: flex;
+    margin: 0;
+}
+
+.burger.active {
+    position: fixed;
+    top: 25px;
+}
+
+.burger {
+    position: relative;
+    z-index: 1000;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    background-color: #38040E;
+    transition: all 0.3s ease;
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: #38040E;
+    transition: all 0.3s ease;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 9px;
+    transform: rotate(-45deg);
+        background-color: white;
+}
+
+.burger.active::after {
+    bottom: 9px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(56, 4, 14, 0.98);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.menu.open ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu.open .menu-item a {
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu.open .menu-item a:hover {
+    color: #000000;
+}
+
+footer {
+    margin-top: 70px;
+    border-top: 2px solid #38040E; 
+    width: 100%;
+}
+
+.ftr-item a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.ftr ul {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1600px;
+}
+
+
+@media (max-width: 1600px) {
+    body {
+        width: 1500px;
+    }
+
+    .container {
+        max-width: 1500px;
+        width: 100%;
+    }
+
+    .footer .ftr ul {
+        width: 1500px;
+    }
+
+    .shop_card {
+        width: 350px;
+        height: 432px;
+    }
+}
+
+@media (max-width: 1500px) {
+    body {
+        width: 1400px;
+    }
+
+    .container {
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .footer .ftr ul {
+        width: 1400px;
+    }
+
+    .shop_card {
+        width: 400px;
+        height: 500px;
+    }
+
+    .shop_card img {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1400px) {
+    body {
+        width: 1300px;
+    }
+
+    .container {
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    .footer .ftr ul {
+        width: 1300px;
+    }
+
+    .shop_card {
+        width: 400px;
+        height: 500px;
+    }
+
+    .shop_card img {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1300px) {
+    body {
+        width: 1200px;
+    }
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .footer .ftr ul {
+        width: 1200px;
+    }
+
+    .shop_card {
+        width: 450px;
+        height: 550px;
+    }
+
+    .shop_card img {
+        width: 405px;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        width: 1100px;
+    }
+
+    .container {
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .footer .ftr ul {
+        width: 1100px;
+        font-size: 16px;
+        margin-right: 50px;
+    }
+
+    .shop_card {
+        width: 450px;
+        height: 550px;
+    }
+
+    .shop_card img {
+        width: 405px;
+    }
+}
+
+@media (max-width: 1100px) {
+    body {
+        width: 1000px;
+    }
+
+    .container {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .footer .ftr ul {
+        width: 1000px;
+    }
+
+    .shop_card {
+        width: 450px;
+        height: 550px;
+    }
+
+    .shop_card img {
+        width: 405px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        max-width: 900px;
+        width: 100%;
+    }
+    
+    .header {
+        width: 900px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .footer .ftr ul {
+        width: 900px;
+    }
+
+    .shop_cards {
+        justify-content: center;
+    }
+
+    .shop_card {
+        width: 500px;
+        height: 580px;
+    }
+
+    .shop_card img {
+        width: 455px;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        width: 900px;
+    }
+
+    .container {
+        max-width: 800px;
+        width: 100%;
+    }
+    
+    .header {
+        width: 800px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 20px;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    footer {
+        width: 800px;
+    }
+
+    .footer .ftr ul {
+        width: 800px;
+    }
+
+    .shop_card {
+        width: 500px;
+        height: 600px;
+    }
+
+    .shop_cards {
+       justify-content: center;
+    }
+
+    .shop_card img {
+        width: 460px;
+    }
+
+    .h1 {
+       font-size: 30px;
+       font-weight: 400;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 700px;
+    }
+
+    .container {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .shop_card {
+        width: 500px;
+        height: 600px;
+    }
+
+    .shop_cards {
+       justify-content: center;
+    }
+
+    .shop_card img {
+        width: 460px;
+    }
+
+    .h1 {
+       font-size: 30px;
+       font-weight: 400;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 600px;
+    }
+
+    footer {
+        width: 700px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 26px;
+    }
+
+    .ftr-item a {
+        font-size: 14px;
+    }
+
+    .footer .ftr ul {
+        width: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 600px;
+    }
+
+    .container {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .shop_card {
+        width: 500px;
+        height: 600px;
+    }
+
+    .shop_cards {
+       justify-content: center;
+    }
+
+    .shop_card img {
+        width: 460px;
+    }
+
+    .h1 {
+       font-size: 30px;
+       font-weight: 400;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+        width: 500px;
+    }
+    
+    footer {
+        width: 600px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 16px;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    .ftr-item a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .footer .ftr ul {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 500px;
+    }
+
+    .container {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .shop_card {
+        width: 500px;
+        height: 600px;
+    }
+
+    .shop_cards {
+       justify-content: center;
+    }
+
+    .shop_card img {
+        width: 460px;
+    }
+
+    .h1 {
+       font-size: 30px;
+       font-weight: 400;
+    }
+
+    .header {
+        max-width: 80%;
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    .footer .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 500px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        text-align: left;
+        width: 500px;
+    }
+    
+    footer {
+        padding: 20px 0;
+        width: 500px;
+    }
+
+    .header {
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 400px;
+    }
+
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .shop_card {
+        width: 400px;
+        height: 500px;
+    }
+
+    .shop_cards {
+       justify-content: center;
+    }
+
+    .shop_card img {
+        width: 360px;
+    }
+
+    .h1 {
+       font-size: 25px;
+       font-weight: 400;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 60px;
+        padding-left: 20px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+    
+    .footer .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 400px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 400px;
+    }
+    
+    footer {
+        padding: 20px 0;
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        width: 300px;
+    }
+
+    .container {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .shop_card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .shop_cards {
+       justify-content: center;
+    }
+
+    .shop_card img {
+        width: 260px;
+    }
+
+    .h1 {
+       font-size: 25px;
+       font-weight: 400;
+    }
+
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    .footer .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 300px;
+    }
+    
+    .ftr-item a {
+        font-size: 16px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 300px;
+    }
+    
+    footer {
+        padding: 20px 0;
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 200px;
+    }
+
+    .container {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .shop_card {
+        width: 200px;
+        height: 320px;
+    }
+
+    .shop_cards {
+       justify-content: center;
+    }
+
+    .shop_card img {
+        width: 160px;
+    }
+
+    .h1 {
+       font-size: 25px;
+       font-weight: 400;
+    }
+
+    .header {
+        width: 200px;
+    }
+
+    .header {
+        padding: 0 10px;
+        position: relative;
+        width: 100px;
+    }
+    
+    .logo img {
+        width: 20px;
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 20px;
+    }
+
+    .footer .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 200px;
+    }
+    
+    .ftr-item a {
+        font-size: 13px;
+    }
+
+    .ftr-item{
+        margin: 0;
+        width: 200px;
+    }
+    
+    footer {
+        padding: 10px 0;
+        margin-top: 40px;
+        width: 200px;
+    }
+
+    .menu-LogIN ul {
+        font-size: 13px;
+    }
+} 
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .main-b {
+        width: 95%;
+        
+    }
+    .card-brand {
+        width: 200px;
+        height: 300px;
+    }
+    .img-brand img {
+        width: 180px;
+    }
+    .text-brand {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 26px;
+    }
+
+    .ftr-item a {
+        margin-left: 0;
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    .ftr-item a {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 70px;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+
+    
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .header {
+        padding: 0 50px;
+        position: relative;
+    }
+
+    .menu.open {
+        padding: 50px 0;
+        justify-content: flex-start;
+    }
+    
+    .menu.open .menu-item a {
+        font-size: 24px;
+    }
+    .ftr ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
